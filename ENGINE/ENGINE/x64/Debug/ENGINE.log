@@ -1,2 +1,9 @@
 ﻿  ENGINE.cpp
+  main.cpp
+D:\Máster\Arquitectura\ENGINE++\ENGINE\ENGINE\main.cpp(8,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Máster\Arquitectura\ENGINE++\ENGINE\ENGINE\main.cpp(13,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  tigr.c
+D:\Máster\Arquitectura\ENGINE++\ENGINE\ENGINE\libs\tigr.c(2301,37): warning C4244: '=': conversion from 'WPARAM' to 'int', possible loss of data
+D:\Máster\Arquitectura\ENGINE++\ENGINE\ENGINE\libs\tigr.c(6331,19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   ENGINE.vcxproj -> D:\Máster\Arquitectura\ENGINE++\ENGINE\x64\Debug\ENGINE.exe
