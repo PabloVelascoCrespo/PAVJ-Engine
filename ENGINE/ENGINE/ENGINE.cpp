@@ -1,45 +1,54 @@
+// PABLO VELASCO CRESPO
+// - https://github.com/PabloVelascoCrespo 
+// - public domain
+
 #include "ENGINE.h"
 
-int main()
+float ENGINE::GetElapsedSeconds() const
 {
-	ENGINE engine;
-	if (!engine.Init())
-		return -1;
-
-	while (engine.isRunning())
-	{
-		engine.Render();
-		engine.Update();
-		//engine.Input();
-	}
-	engine.Quit();
+	return tigrTime();
 }
 
 bool ENGINE::isRunning()
 {
-	m_isRunning = !tigrClosed(m_screen);
+	m_isRunning = !tigrClosed(m_Screen);
 	return m_isRunning;
 }
 
-void ENGINE::Render()
+void ENGINE::Clear()
 {
-	tigrClear(m_screen, tigrRGB(0x80, 0x90, 0xa0));
+	tigrClear(m_Screen, tigrRGB(0x80, 0x90, 0xa0));
 }
 
 void ENGINE::Update()
 {
-	tigrUpdate(m_screen);
+	tigrUpdate(m_Screen);
 }
 
-void ENGINE::Log(const char* text)
+void ENGINE::Log(std::string _text)
 {
-	puts(text);
+	puts(_text.c_str());
+}
+
+void ENGINE::Print(std::string _text)
+{
+	tigrPrint(m_Screen, tfont, 0,0,tigrRGB(0,0,0), _text.c_str());
+}
+
+float ENGINE::Wait(float _s)
+{
+	float waitedTime = 0.0f;
+	while (waitedTime <= _s)
+	{
+		waitedTime += GetElapsedSeconds();
+	}
+	return waitedTime;
 }
 
 bool ENGINE::Init()
 {
-	m_screen = tigrWindow(320, 240, "Hello", 0);
-	if (m_screen == nullptr) return false;
+	m_Screen = tigrWindow(320, 240, "Hello", 0);
+	if (m_Screen == nullptr) return false;
 	m_isRunning = true;
 	return true;
 }
@@ -52,7 +61,7 @@ bool ENGINE::Input()
 
 bool ENGINE::Quit()
 {
-	tigrFree(m_screen);
-	m_screen = nullptr;
+	tigrFree(m_Screen);
+	m_Screen = nullptr;
 	return true;
 }

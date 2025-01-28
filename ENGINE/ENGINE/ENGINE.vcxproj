@@ -138,6 +138,7 @@
   <ItemGroup>
     <ClCompile Include="ENGINE.cpp" />
     <ClCompile Include="libs\tigr.c" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ENGINE.rc" />
