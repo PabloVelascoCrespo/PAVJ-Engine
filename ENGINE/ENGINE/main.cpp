@@ -1,6 +1,7 @@
 #include "ENGINE.h"
 #include "ecs.hh"
 #include "pugixml.hpp"
+#include "minilua.h"
 
 int main()
 {

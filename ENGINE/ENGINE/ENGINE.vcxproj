@@ -132,6 +132,7 @@
     <ClInclude Include="ecs.hh" />
     <ClInclude Include="ENGINE.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="libs\minilua.h" />
     <ClInclude Include="libs\pugiconfig.hpp" />
     <ClInclude Include="libs\pugixml.hpp" />
     <ClInclude Include="libs\tigr.h" />
@@ -142,6 +143,7 @@
     <ClCompile Include="demo.cc" />
     <ClCompile Include="ENGINE.cpp" />
     <ClCompile Include="libs\tigr.c" />
+    <ClCompile Include="defines.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
