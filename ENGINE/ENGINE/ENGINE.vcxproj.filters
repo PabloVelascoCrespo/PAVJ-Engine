@@ -33,6 +33,12 @@
     <ClInclude Include="ecs.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="libs\pugixml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\pugiconfig.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ENGINE.cpp">
