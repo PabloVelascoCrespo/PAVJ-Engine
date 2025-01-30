@@ -4,9 +4,11 @@
 
 #include "ENGINE.h"
 
-float ENGINE::GetElapsedSeconds() const
+float ENGINE::Time() const
 {
-	return tigrTime();
+	static double t = 0;
+	t += tigrTime();
+	return t;
 }
 
 bool ENGINE::isRunning()
@@ -35,20 +37,19 @@ void ENGINE::Print(std::string _text)
 	tigrPrint(m_Screen, tfont, 0,0,tigrRGB(0,0,0), _text.c_str());
 }
 
-float ENGINE::Wait(float _s)
+void ENGINE::Wait(float _s)
 {
-	float waitedTime = 0.0f;
-	while (waitedTime <= _s)
-	{
-		waitedTime += GetElapsedSeconds();
-	}
-	return waitedTime;
+	float currentTime = Time();
+	while (Time() - currentTime <= _s) {}
 }
 
 bool ENGINE::Init()
 {
 	m_Screen = tigrWindow(320, 240, "Hello", 0);
-	if (m_Screen == nullptr) return false;
+	if (m_Screen == nullptr)
+	{
+		return false;
+	}
 	m_isRunning = true;
 	return true;
 }

@@ -105,7 +105,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Máster\Arquitectura\ENGINE++\ENGINE\ENGINE\libs</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pablo.velasco\OneDrive - U-tad\PAVJ-Engine\ENGINE\ENGINE\libs</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -129,6 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ecs.hh" />
     <ClInclude Include="ENGINE.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="libs\tigr.h" />
@@ -136,16 +137,10 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="demo.cc" />
     <ClCompile Include="ENGINE.cpp" />
     <ClCompile Include="libs\tigr.c" />
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="ENGINE.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="ENGINE.ico" />
-    <Image Include="small.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

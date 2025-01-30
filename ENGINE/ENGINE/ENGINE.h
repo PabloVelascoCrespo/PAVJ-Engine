@@ -26,11 +26,10 @@ public:
 	}
 
 	/**
-	* Returns the amount of time the Engine has been running
-	* sice the last time this function was called
-	* Returns 0 on the first time;
+	 * @brief Ask how much time the Engine has been running
+	 * @return the number of seconds the Engine has been running
 	*/
-	float GetElapsedSeconds() const;
+	float Time() const;
 
 	/**
 	* Checks if the Engine is still running
@@ -63,7 +62,7 @@ public:
 	* Waits the amount of seconds given
 	* Returns the amount of seconds waited
 	*/
-	float Wait(float _s);
+	void Wait(float _s);
 
 	/**
 	* Initializes the engine
