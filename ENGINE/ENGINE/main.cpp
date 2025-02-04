@@ -1,23 +1,35 @@
 #include "ENGINE.h"
 #include "ecs.hh"
-#include "pugixml.hpp"
 #include "minilua.h"
+#include "Sprite.h"
 
 int main()
 {
 	ENGINE engine;
 	if (!engine.Init())
 		return -1;
-	float desiredFPS = 1.0 / 30;
+	
+	Sprite sprite("../ART/Sprites/mario.png");
+	std::string sprite_xml;
+	sprite.Save(sprite_xml);
+
+	float desiredFPS = 1.0f / 30;
 	float currentTime = engine.Time();
+
+
 	while (engine.isRunning())
 	{
 		float elapsedSeconds = engine.Time() - currentTime;
 		currentTime = engine.Time();
-		float fps = 1.0 / elapsedSeconds;
+		float fps = 1.0f / elapsedSeconds;
 		engine.Wait(desiredFPS);
 		engine.Clear();
-		engine.Print(engine.toString(fps));
+
+		sprite.Draw(engine.getScreen());
+
+		engine.Print(sprite_xml);
+		//engine.Print(engine.toString(fps));
+
 		engine.Update();
 	}
 	engine.Quit();

@@ -4,16 +4,18 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-
 #include "framework.h"
 
 class ENGINE
 {
 private:
 	bool m_isRunning = false;
-	Tigr* m_Screen;
+	Tigr* m_Screen = nullptr;
 
 public:
+
+	Tigr* getScreen() const;
+
 	/**
 	* Transforms any type to a String
 	*/

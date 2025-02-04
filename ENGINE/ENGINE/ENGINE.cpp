@@ -4,9 +4,14 @@
 
 #include "ENGINE.h"
 
+Tigr* ENGINE::getScreen() const
+{
+	return m_Screen;
+}
+
 float ENGINE::Time() const
 {
-	static double t = 0;
+	static float t = 0;
 	t += tigrTime();
 	return t;
 }
