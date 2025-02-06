@@ -14,7 +14,7 @@ Sprite::~Sprite()
 	}
 }
 
-bool Sprite::Save(std::string& _out_)
+bool Sprite::Save(std::string& _out_) const
 {
 	pugi::xml_document doc;
 	pugi::xml_node node = doc.append_child("Sprite");
@@ -55,12 +55,11 @@ bool Sprite::Load(Sprite& _obj_, const std::string& _file)
 		return false;
 	}
 	return false;
-
 }
 
 void Sprite::Draw(Tigr* _window) const
 {
-	int dx = 0, dy = 0;
+	int dx = m_Image->cx, dy = m_Image->cy;
 	int sx = 0, sy = 0;
 	int tw = m_Image->w, th = m_Image->w;
 	tigrBlit(_window, m_Image, dx, dy, sx, sy, tw, th);

@@ -1,10 +1,8 @@
 #pragma once
-
-#include "tigr.h"
+#include "TIGR/tigr.h"
 #include <iostream>
 #include <string>
 #include <sstream>
-#include "framework.h"
 
 class ENGINE
 {

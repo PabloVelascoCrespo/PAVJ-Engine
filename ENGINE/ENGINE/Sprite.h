@@ -1,8 +1,9 @@
 #pragma once
 #include <string>
 #include <sstream>
-#include "tigr.h"
-#include "pugixml.hpp"
+#include "TIGR/tigr.h"
+#include "XML/pugixml.hpp"
+#include "SOL/sol.hpp"
 
 class Sprite
 {
@@ -13,7 +14,7 @@ public:
 	/**
 	 * @brief Constructor
 	*/
-	Sprite();
+	Sprite() {};
 
 	/**
 	 * @brief Constructor
@@ -30,7 +31,7 @@ public:
 	 * @brief Saves the Sprite into a File
 	 * @return The route in which the Sprite has been saved
 	*/
-	bool Save(std::string& _out_);
+	bool Save(std::string& _out_) const;
 
 	/**
 	 * @brief Loads a new Sprite from a File

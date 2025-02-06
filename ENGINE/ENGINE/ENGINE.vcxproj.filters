@@ -13,50 +13,404 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="libs">
+      <UniqueIdentifier>{45718672-69bc-41eb-aefb-09c08db8dd50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\XML">
+      <UniqueIdentifier>{f9694f82-2311-429c-ab2e-12ba747dd125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\ECS">
+      <UniqueIdentifier>{5cf89b06-509e-4a46-b1af-f3d892839021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\TIGR">
+      <UniqueIdentifier>{4b355fe7-dc35-4366-9dd7-cd66050fcbaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\LUA">
+      <UniqueIdentifier>{e61ca146-1a91-4ff1-bd1c-8355da3c436d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\SOL">
+      <UniqueIdentifier>{88528790-a8e7-4414-bb47-c61c1a160660}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="libs\tigr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ENGINE.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ecs.hh">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="libs\pugixml.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="libs\pugiconfig.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="libs\minilua.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Sprite.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\XML\pugiconfig.hpp">
+      <Filter>libs\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\XML\pugixml.hpp">
+      <Filter>libs\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\TIGR\tigr.h">
+      <Filter>libs\TIGR</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\LUA\minilua.h">
+      <Filter>libs\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\ECS\ecs.hh">
+      <Filter>libs\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\detail\build_version.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack\detail\pairs.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\utility\is_integer.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\utility\to_string.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\abort.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\as_args.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\as_returns.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\assert.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\base_traits.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\bind_traits.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\bytecode.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\call.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\compatibility.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\config.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\coroutine.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\debug.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\demangle.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\deprecate.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\dump_handler.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\ebco.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\environment.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\epilogue.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\error.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\error_handler.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\forward.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\forward_as.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\forward_detail.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\function.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\function_result.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\function_types.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\function_types_core.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\function_types_overloaded.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\function_types_stateful.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\function_types_stateless.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\function_types_templated.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\in_place.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\inheritance.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\load_result.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\lua_table.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\lua_value.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\make_reference.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\metatable.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\object.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\object_base.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\optional.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\optional_implementation.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\overload.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\packaged_coroutine.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\pairs_iterator.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\pointer_like.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\policies.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\prologue.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\property.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\protect.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\protected_function.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\protected_function_result.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\protected_handler.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\proxy_base.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\raii.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\reference.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\resolve.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\sol.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_check.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_check_get.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_check_get_qualified.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_check_get_unqualified.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_check_qualified.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_check_unqualified.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_core.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_field.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_get.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_get_qualified.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_get_unqualified.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_guard.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_iterator.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_pop.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_probe.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_proxy.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_proxy_base.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_push.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\stack_reference.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\state.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\state_handling.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\state_view.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\string_view.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\table.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\table_core.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\table_iterator.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\table_proxy.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\thread.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\tie.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\traits.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\trampoline.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\tuple.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\types.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\unicode.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\unique_usertype_traits.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\unreachable.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\unsafe_function.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\unsafe_function_result.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\userdata.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\usertype.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\usertype_container.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\usertype_container_launch.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\usertype_core.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\usertype_proxy.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\usertype_storage.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\usertype_traits.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\variadic_args.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\variadic_results.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\version.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\wrapper.hpp">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\compatibility\compat-5.3.c.h">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\compatibility\compat-5.3.h">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\compatibility\compat-5.4.h">
+      <Filter>libs\SOL</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\SOL\compatibility\lua_version.hpp">
+      <Filter>libs\SOL</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ENGINE.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="libs\tigr.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="demo.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="defines.cpp">
@@ -65,8 +419,14 @@
     <ClCompile Include="Sprite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="libs\pugixml.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="libs\XML\pugixml.cpp">
+      <Filter>libs\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\TIGR\tigr.c">
+      <Filter>libs\TIGR</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\ECS\demo.cc">
+      <Filter>libs\ECS</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

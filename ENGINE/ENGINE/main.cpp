@@ -1,6 +1,6 @@
 #include "ENGINE.h"
-#include "ecs.hh"
-#include "minilua.h"
+#include "ECS\ecs.hh"
+#include "LUA\minilua.h"
 #include "Sprite.h"
 
 int main()
